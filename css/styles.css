@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(2, 72, 177, 0.89);
+}
+
+header{
+    background-color: rgb(0, 183, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    flex-wrap: wrap;
+}
+
+.titulo{
+    position: absolute;
+    top:10px;
+    left: 15px;
+    font-size: 20px;
+}
+
+nav{
+    position: absolute;
+    top: 22px;
+    right: 20px;
+}
+
+nav li{
+    display: inline;
+}
+
+nav li :hover{
+    color: darkgoldenrod;
+    font-size: 20px;
+    background-color: white;
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
+}
+
+
+.contenedor_limite{
+    background-color: rgba(0, 162, 255, 0.904);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 5px solid darkgoldenrod;
+    text-align: center;
+}
+
+.contenedor_limite_2{
+    background-color: rgba(0, 162, 255, 0.904);
+    padding: 10px;
+    border: 5px solid darkgoldenrod;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.padre{
+    background-color: rgba(0, 162, 255, 0.904);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section{
+    margin: 25px;
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    border: 5px solid darkgoldenrod ;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card2{
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    border: 5px solid darkgoldenrod ;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.card2 img{
+    width: 100%;
+    
+}
+
+.carrusel{
+    height: 1000px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.carrusel h5{
+    background-color: black;
+}
+
+.carrusel p{
+    background-color: black;
+}
+
+footer li{
+    display: inline;
+}
+
+
+footer a{
+    text-decoration: none;
+    color:black;
+}
+
+footer{
+    background-color: rgb(0, 183, 255);
+}
+
+/*--media query--*/
+@media screen and (max-width:700px){
+    header{
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    nav{
+        left: 15px;
+        top: 40px;
+    }
+
+    .card2{
+        width: 250px;
+    }
+}
